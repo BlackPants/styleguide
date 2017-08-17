@@ -1892,6 +1892,10 @@ def CheckHeaderFileIncluded(filename, include_state, error):
   if Search(_TEST_FILE_SUFFIX, fileinfo.BaseName()):
     return
 
+  # Do not check scape library files
+  if Search(r'^scape', fileinfo.BaseName()):
+    return
+
   headerfile = filename[0:len(filename) - len(fileinfo.Extension())] + '.h'
   if not os.path.exists(headerfile):
     return
