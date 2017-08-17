@@ -4706,7 +4706,7 @@ def CheckLanguage(filename, clean_lines, linenum, file_extension,
       if not tok: continue
       if Match(r'\d+', tok): continue
       if Match(r'0[xX][0-9a-fA-F]+', tok): continue
-      if Match(r'k[A-Z0-9]\w*', tok): continue
+      if Match(r'k_[A-Z0-9]\w*', tok): continue
       if Match(r'(.+::)?k[A-Z0-9]\w*', tok): continue
       if Match(r'(.+::)?[A-Z][A-Z0-9_]*', tok): continue
       # A catch all for tricky sizeof cases, including 'sizeof expression',
@@ -4720,7 +4720,7 @@ def CheckLanguage(filename, clean_lines, linenum, file_extension,
     if not is_const:
       error(filename, linenum, 'runtime/arrays', 1,
             'Do not use variable-length arrays.  Use an appropriately named '
-            "('k' followed by CamelCase) compile-time constant for the size.")
+            "('k_' followed by CamelCase) compile-time constant for the size.")
 
   # Check for use of unnamed namespaces in header files.  Registration
   # macros are typically OK, so we allow use of "namespace {" on lines
