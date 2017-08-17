@@ -4710,7 +4710,7 @@ def CheckLanguage(filename, clean_lines, linenum, file_extension,
       if not tok: continue
       if Match(r'\d+', tok): continue
       if Match(r'0[xX][0-9a-fA-F]+', tok): continue
-      if Match(r'k_[A-Z0-9]\w*', tok): continue
+      if Match(r'k_[a-z0-9]\w*', tok): continue
       if Match(r'(.+::)?k[A-Z0-9]\w*', tok): continue
       if Match(r'(.+::)?[A-Z][A-Z0-9_]*', tok): continue
       # A catch all for tricky sizeof cases, including 'sizeof expression',
