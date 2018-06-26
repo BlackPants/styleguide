@@ -36,9 +36,9 @@ The following Google style guides live outside of this project:
 <a rel="license" href="https://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/3.0/88x31.png" /></a>
 
 [cpp]: https://google.github.io/styleguide/cppguide.html
-[objc]: https://google.github.io/styleguide/objcguide.xml
+[objc]: objcguide.md
 [java]: https://google.github.io/styleguide/javaguide.html
-[py]: https://google.github.io/styleguide/pyguide.html
+[py]: https://github.com/google/styleguide/blob/gh-pages/pyguide.md
 [r]: https://google.github.io/styleguide/Rguide.xml
 [sh]: https://google.github.io/styleguide/shell.xml
 [htmlcss]: https://google.github.io/styleguide/htmlcssguide.html
